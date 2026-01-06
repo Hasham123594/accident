@@ -9,7 +9,8 @@ OUT = Path("outputs")
 
 
 def load_data() -> pd.DataFrame:
-    return pd.read_csv(DATA)
+    return pd.read_csv(DATA, low_memory=False)
+
 
 
 def accidents_by_cause(df: pd.DataFrame) -> pd.DataFrame:
