@@ -1,0 +1,13 @@
+[project]
+name = "accidents-pipeline"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["pandas>=2",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
